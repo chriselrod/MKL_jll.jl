@@ -21,7 +21,7 @@ if VERSION < v"1.3.0-rc4"
     # require greater and greater heroics for more and more complex packages.
     error("Unable to import MKL_jll on Julia versions older than 1.3!")
 end
-
+using LazyArtifacts
 using Pkg, Pkg.BinaryPlatforms, Pkg.Artifacts, Libdl
 import Base: UUID
 
